@@ -356,7 +356,7 @@ textarea.modal-input::placeholder {
 .icon {
     display: inline-block;
     width: 16px;
-    height: 15px;
+    height: 16px;
     border: 2px solid var(--primary-text-color);
     border-radius: 3px;
     margin-right: 8px;
