@@ -55,8 +55,10 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
+                <div class="hero-content">
+                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                    <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
+                </div>
             </div>
             <div class="modal-overlay is-hidden" data-modal>
                 <div class="modal-form">
@@ -65,7 +67,47 @@
                             <use href="./images/symbol-defs-clean.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <form action="">
+                        <label class="modal-label">
+                            Имя
+                            <input name="client-name" class="modal-input" type="text">
+                            <svg class="modal-icon">
+                                <use href="./images/icons.svg#icon-modal-person"></use>
+                            </svg>
 
+                        </label>
+                        <label class="modal-label">Телефон
+                            <input name="client-number" class="modal-input" type="tel">
+
+                            <svg class="modal-icon">
+                                <use href="./images/icons.svg#icon-modal-phone"></use>
+                            </svg>
+
+
+                        </label>
+                        <label class="modal-label">Почта
+                            <input name="client-email" class="modal-input" type="email">
+                            <svg class="modal-icon">
+                                <use href="./images/icons.svg#icon-modal-email"></use>
+                            </svg>
+
+
+                        </label>
+                        <label class="modal-label">
+                            Комментарий
+                            <textarea class="modal-input" name="client-comment" placeholder="Введите текст"></textarea>
+                        </label>
+                        <label name="client-agreement" class="modal-checkbox-text">
+
+                            <input class="checkbox" type="checkbox" name="hobby" value="music" />
+                            <span class="icon"></span>
+                            <span>Соглашаюсь с рассылкой и принимаю <a class="agreement" href="">Условия
+                                    договора</a></span>
+                        </label>
+
+                        <button class="button">Отправить</button>
+                    </form>
                 </div>
             </div>
             </div>
@@ -410,6 +452,22 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="subscribe">
+                <!-- <p class="feedback-label">Подпишитесь на рассылку</p> -->
+                <form class="subscribe-form">
+                    <label for="subscribe" class="subscribe-label">Подпишитесь на рассылку</label>
+                    <div class="subscribe-field">
+                        <input name="client-subscribe" id="subscribe" type="email" class="subscribe-input"
+                            placeholder="Email">
+                        <button type="submit" class="subscribe-button">
+                            Подписаться
+                            <svg class="subscribe-icon">
+                                <use href="./images/icons.svg#subscribe-icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 
